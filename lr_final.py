@@ -31,7 +31,7 @@ import logging
 # COMMAND ----------
 
 # Wine Quality Sample
-def train(in_alpha=0.3, in_l1_ratio=0.5):
+def train(alpha=0.3, l1_ratio=0.5):
     #mlflow.set_experiment('/mlflow_test/elasticnet_wine_1')
 
     logging.basicConfig(level=logging.WARN)
