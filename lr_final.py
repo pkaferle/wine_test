@@ -22,8 +22,8 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 
-import mlflow
-import mlflow.sklearn
+#import mlflow
+#import mlflow.sklearn
 
 import logging
 
@@ -31,7 +31,7 @@ import logging
 # COMMAND ----------
 
 # Wine Quality Sample
-def train(in_alpha=0.3, in_l1_ratio=0.5):
+def train(alpha=0.3, l1_ratio=0.5):
     #mlflow.set_experiment('/mlflow_test/elasticnet_wine_1')
 
     logging.basicConfig(level=logging.WARN)
